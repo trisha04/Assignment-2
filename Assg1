@@ -1,0 +1,28 @@
+HDFS cluster has a name node which manage the file system metadata and data node.Data nodes are those which manage the actual data.
+Some features of HDFS are as follows:
+
+Hadoop is written in java and is supported in all the major platforms
+It supports shell like commands so that it can interact with HDFS directly
+It is highly configurable with default configuration that are suited for many installations
+It is suited for distributed storage
+
+
+Hadoop cluster
+They are comprised of three nodes types:
+Master node-oversee the following key operations that comprise Hadoop storing data in HDFS
+Worker node-make up the most of virtual matchines and store data and running computations
+Client node-loads data into the cluster and submit the map redued job emphasising on the way the data shoud be processed.
+
+HDFS Blocks
+HDFS stores data in form of unit known as blocks.These blocks are of large size.
+It is 64 MB of size and stored into hadoop system.
+Advantages of HDFS blocks:
+Blocks are of fixed size therefore it is very easy to calculate the number of blocks
+Block concept simplifies the datanode storage.Namenode maintains metadata of all the blocks
+Suppose the size of file is less than the complete block size the file will not occupy the complete storage
+It is also useful when size of file is larger than the block size as data blocks distributed and stored in multiple nodes
+Blocks are very easy to replicate between the data nodes
+
+
+
+
